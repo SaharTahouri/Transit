@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --mainWhite: #FFF;
+    --mainGray: #858585;
+    --mainBlue: #3CADD4;
+    --colorBlack: #444;
+    --bgcolorBlack: #383B43;
+}
+
+* {
+    font-family: Raleway !important;
+    color: var(--colorBlack);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica;
+    font-weight: 700 !important;
+    color: #474747 !important;
+}
+
+@media (max-width: 355px) {
+    .banner-content button,
+    .about-footer button,
+    form button {
+        max-width: 240px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .about-footer button {
+        max-width: 165px;
+    }
+
+    form button {
+        max-width: 165px !important;
+    }
+}
+
+/* navbar */
+
+.header {
+    background: url("../images/dark_tint.png"), url("../images/bokeh_car_lights_bg.jpg") center / cover;
+}
+
+/* .navbar {
+    background-color: var(--bgcolorBlack);
+} */
+
+.navbar-toggler-icon {
+    outline-color: var(--mainWhite);
+}
+
+.btn-white {
+    /* border-radius: 30px !important; */
+    color: var(--colorBlack) !important;
+    background-color: var(--mainWhite) !important;
+}
+
+.banner-content {
+    padding: 8.53125rem;
+}
+
+.banner-content h2 {
+    font-size: 3.4375rem;
+    line-height: 120px;
+}
+
+.banner-content p {
+    margin-bottom: 2.5rem;
+}
+
+.banner-content button {
+    padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+}
+
+.btn-blue {
+    background-color: var(--mainBlue) !important;
+}
+
+/* services */
+
+.services {
+    background-color: #F5F5F5;
+}
+
+.services-header h2 {
+    font-size: 2.625rem;
+}
+
+.services-header p {
+    color: var(--mainGray);
+}
+
+.card-icon {
+    background-color: var(--mainBlue);
+}
+
+.card-title {
+    margin: 1.25rem;
+    color: var(--mainGray) !important;
+}
+
+.card-text {
+    display: -webkit-box;
+    max-height: 96px;
+    color: var(--colorBlack);
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+/* about */
+
+.about-header p {
+    margin-bottom: 2rem;
+    color: var(--mainGray);
+}
+
+/* message */
+
+.message {
+    background-color: var(--mainBlue);
+
+
+}
+
+input {
+    color: var(--colorBlack) !important;
+}
+
+textarea {
+    color: var(--colorBlack);
+    resize: none !important;
+}
+
+input:focus,
+textarea:focus {
+    color: var(--colorBlack) !important;
+}
+
+.btn-dark {
+    background-color: var(--bgcolorBlack) !important;
+}
+
+.footer {
+    background-color: var(--bgcolorBlack);
+}
+
+.list-group-item-dark,
+.list-group-item-dark a {
+    color: var(--mainGray);
+}
